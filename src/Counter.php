@@ -205,11 +205,11 @@ class Counter
      */
     private static function createPageIfNotPresent($page)
     {
-        if (!isset(self::$current_page)) {
+        // if (!isset(self::$current_page)) {
             self::$current_page = Page::firstOrCreate([
                 'page' => $page
             ]);
-        }
+        // }
 
         return self::$current_page;
     }
